@@ -156,6 +156,7 @@ class Employee{
 		//where is the mouse?
 		if (following){
 			
+			//this could be rewritten to be a bit more sophisticated
 			changeTarget(new PVector(mouseX, mouseY));
 
 		}
@@ -215,9 +216,6 @@ class Employee{
 			applyForce(steer);
 		}
 	}
-
-
-	//our display functions
 
 	void display(){
 		fill(palette[3]);
